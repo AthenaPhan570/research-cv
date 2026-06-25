@@ -31,29 +31,22 @@ hugoblox:
   # THEME
   # Color and visual design system
   # ────────────────────────────────────────────────────────────────────────────
+  # config/_default/params.yaml
   theme:
-    # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
-    # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
-    # Optional: Override theme pack colors
+    pack: minimal
     colors:
-      primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: ""
-      neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
-    # Optional: Mode-specific color overrides
-    colors_light: {}
-    colors_dark: {}
-    # Optional: Semantic surface color overrides
+      primary: '#8F9779'      # Earthy Moss Green
+      secondary: '#B2C2D1'    # Dusty Pastel Blue
+      neutral: stone          # Warmer than default gray
     surfaces:
-      background: ""
-      foreground: ""
-      header:
-        background: ""
-        foreground: ""
-      footer:
-        background: ""
-        foreground: ""
+      background: '#FAF9F6'   # Off-white "Alabaster" (less harsh than white)
+      foreground: '#434a36'   # Dark moss (softer than black)
+    typography:
+      pack: editorial         # Serifs for a non-techy, academic feel
+      families:
+        heading: 'Lora'       # Elegant Vietnamese-supported Google Font
+        body: 'Inter'         # Clean sans-serif for legibility
+
 
   # ────────────────────────────────────────────────────────────────────────────
   # TYPOGRAPHY
